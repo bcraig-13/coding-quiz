@@ -1,6 +1,7 @@
 -Make <h1> center of screen that is a welcome message
 
 Link to high score window on top left
+    High scores as separate page?
 
 -Make <p> under <h1> that is a description of how to play the game
 
@@ -15,7 +16,7 @@ Link to high score window on top left
 
 -During quiz the <p> becomes 4 buttons with multiple choice answers
     Clicking correct answer will display "Correct!" 
-    Clicking incorrect answer will display "Wrong!"
+    Clicking incorrect answer will display "Wrong!" and decrease timer
 
 -Reaching the end of the quiz will display <h1> as "Finished!"
     <p> will display "You're final score X"
