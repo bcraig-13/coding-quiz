@@ -13,3 +13,11 @@ var myQuestions = [
         correctAnswer: ""
     },
 ];
+
+function buildQuiz() {
+
+}
+
+function showResults() {
+    
+}
