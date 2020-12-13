@@ -1,35 +1,25 @@
-var quizContainer = document.getElementById("quiz");
-var secondsLeft = 60;
+var counter = 10;
 
-var myQuestions = [
-    {
-        question: "",
+function startQuiz() {
+    setTimeout(function () {
+        counter--;
 
-        answers: {
-            a: "",
-            b: "",
-            c: "",
-            d: ""
-        },
-        correctAnswer: ""
-    },
-];
-function setTimer() {
-    var timerInterval = setInterval(function () {
-        secondsLeft--;
+        if (counter >= 0) {
+            id = document.getElementById("timer");
+            id.innerHTML = counter;
+            
 
-        if (secondsLeft === 0) {
-
-            clearInterval(timerInterval);
+        } else if (counter < 0) {
+            clearTimeout(counter);
+            id = document.getElementById("timer");
+            id.innerHTML = counter + 11;
+            counter = 10;
+            alert("It works!!!");
         }
-
-    }, 60000);
+    }, 1000)
 }
 
-function buildQuiz() {
 
-}
 
-function showResults() {
 
-}
+
