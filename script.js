@@ -1,11 +1,12 @@
 var counter = 60;
 var startBtn = document.querySelector("#start-quiz");
 var corrBtn = document.querySelector(".answerCorr");
-var wroBtn = document.querySelector(".answerWro");
+
+
 
 startBtn.addEventListener("click", startQuiz);
 corrBtn.addEventListener("click", answerCorr);
-wroBtn.addEventListener("click", answerWro);
+
 
 
 //change x to global so timer can stop when quiz is finished
@@ -35,19 +36,42 @@ function startQuiz() {
 }
 
 function clearH3() {
-    document.getElementById("h3").innerHTML = "";
+    document.getElementById("h3").textContent = "";
+    setTimeout(clearH3, 3000);
 }
 
 function answerCorr() {
-    document.getElementById("h3").innerHTML = "Correct!";
+    document.getElementById("h3").textContent = "Correct!";
     setTimeout(clearH3, 3000);
 }
 
 function answerWro() {
-    document.getElementById("h3").innerHTML = "Wrong!";
-    setTimeout(clearH3, 3000);
+    document.getElementById("h3").textContent = "Wrong!";
+    counter - 10;
+    id.innerHTML = counter -10;
 }
 
+function nextQues() {
+    if(document.getElementById("quiz1").style.display === "block") {
+        document.getElementById("quiz1").style.display = "none";
+        document.getElementById("quiz2").style.display = "block";
+    } else if (document.getElementById("quiz2").style.display === "block") {
+        document.getElementById("quiz2").style.display = "none";
+        document.getElementById("quiz3").style.display = "block";
+            
+    } else if (document.getElementById("quiz3").style.display === "block") {
+        document.getElementById("quiz3").style.display = "none";
+        document.getElementById("quiz4").style.display = "block";
+            
+    } else if (document.getElementById("quiz4").style.display === "block") {
+        document.getElementById("quiz4").style.display = "none";
+        document.getElementById("quiz5").style.display = "block";
+            
+    } else (document.getElementById("quiz5").style.display === "block") {
+        document.getElementById("results").style.display = "none";
+        document.getElementById("results").style.display = "block";    
+    }
+}
 
 //create a loop checking high scores. start with first place
 // array1.sort(); --sets array in order
