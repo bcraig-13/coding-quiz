@@ -21,9 +21,9 @@ function startQuiz() {
     }, 1000)
 
     let getStart = document.querySelector("#start-screen");
-    let getQuiz = document.querySelector("#quiz");
-    getStart.style.display = 'none';
-    getQuiz.style.display = 'block';
+    let getQuiz = document.querySelector("#quiz1");
+    getStart.style.display = "none";
+    getQuiz.style.display = "block";
 }
 
 //create a loop checking high scores. start with first place
