@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Coding Quiz</title>
 </head>
 <header>
-    <!--High Scores--><p style="float:right;">Time:<span id="timer" style="float:right;">10</span></p>
+    <!--High Scores-->
+    <p style="float:right;">Time:<span id="timer" style="float:right;">10</span></p>
 </header>
+
 <body>
-    <h1>Welcome to the JavaScript Coding Quiz!</h1>
-    <p>Answer the following questions as fast as you can. Your score will be equal to
-        your time remaining. Are you ready?
-    </p>
-    <div id="quiz"></div>
-    <button onclick="startQuiz()" id="start-quiz">Start Quiz!</button>
+    <div id="start-screen">
+        <h1>Welcome to the JavaScript Coding Quiz!</h1>
+        <p>Answer the following questions as fast as you can. Your score will be equal to
+            your time remaining. Are you ready?
+        </p>
+        <button id="start-quiz">Start Quiz!</button>
+    </div>
+    <div id="quiz" style="display:none;">
+        <h1>Question 1</h1>
+        <p>
+            <button>Answer 1</button><!--Give class to syle later-->
+            <button style="display:block;">Answer 2</button>
+            <button style="display:block;">Answer 3</button>
+            <button style="display:block;">Answer 4</button>
+        </p>
+    </div>
+    <div id="quiz" style="display:none;">
+        <h1>Question 2</h1>
+        <p>
+            <button>Answer 1</button><!--Give class to syle later-->
+            <button style="display:block;">Answer 2</button>
+            <button style="display:block;">Answer 3</button>
+            <button style="display:block;">Answer 4</button>
+        </p>
+    </div>
+
+
     <div id="results"></div>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
