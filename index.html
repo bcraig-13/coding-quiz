@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>JavaScript Coding Quiz</title>
 </head>
 <header>
-    <!--High Scores-->
     <p style="float:right;">Time:<span id="timer" style="float:right;">60</span></p>
 </header>
 
 <body>
+    <hr>
     <div id="start-screen">
         <h1>Welcome to the JavaScript Coding Quiz!</h1>
         <p>Answer the following questions as fast as you can. Your score will be equal to
@@ -20,60 +21,62 @@
         </p>
         <button id="start-quiz">Start Quiz!</button>
     </div>
+
     <div id="quiz1" style="display:none;">
         <h1>#1 - Which of the following will display an alert of "JavaScript is cool!"?</h1>
         <p>
-            <button class="answerWro" onclick="nextQues()">alert(JavaScript is cool!);</button><!--Give class to syle later-->
-            <button class="answerWro" style="display:block;" onclick="nextQues()">prompt("JavaScript is cool!");</button>
-            <button class="answerCorr" style="display:block;" onclick="nextQues()">alert("JavaScript is cool!");</button>
-            <button class="answerWro" style="display:block;" onclick="nextQues()">addEventListener("JavaScript is cool!");</button>
+            <button class="answerWro" onclick="nextQues1()">alert(JavaScript is cool!);</button><!--Give class to syle later-->
+            <button class="answerWro" style="display:block;" onclick="nextQues1()">prompt("JavaScript is cool!");</button>
+            <button style="display:block;" onclick="nextQues1()">alert("JavaScript is cool!");</button>
+            <button class="answerWro" style="display:block;" onclick="nextQues1()">addEventListener("JavaScript is cool!");</button>
         </p>
-        <h3 id ="h3"></h3>
     </div>
+
     <div id="quiz2" style="display:none;">
-        <h1>#2 - What data type is a boolean? </h1>
+        <h1>#2 - What data type is a boolean?</h1>
         <p>
-            <button class="answerWro" onclick="nextQues()">Number</button><!--Give class to syle later-->
-            <button class="answerCorr" style="display:block;" onclick="nextQues()">True/False</button>
-            <button class="answerWro" style="display:block;" onclick="nextQues()">String</button>
-            <button class="answerWro" style="display:block;" onclick="nextQues()">Array</button>
+            <button class="answerWro" onclick="nextQues2()">Number</button><!--Give class to syle later-->
+            <button style="display:block;" onclick="nextQues2()">True/False</button>
+            <button class="answerWro" style="display:block;" onclick="nextQues2()">String</button>
+            <button class="answerWro" style="display:block;" onclick="nextQues2()">Array</button>
         </p>
-        <h3 id ="h3"></h3>
     </div>
+
     <div id="quiz3" style="display:none;"><!--change div id-->
         <h1>#3 - Under what html tag is JavaScript coded?</h1>
         <p>
-            <button class="answerCorr" onclick="nextQues()">script</script>></button><!--Give class to syle later-->
-            <button class="answerWro" style="display:block;" onclick="nextQues()">javascript</button>
-            <button class="answerWro" style="display:block;" onclick="nextQues()">style</button>
-            <button class="answerWro" style="display:block;" onclick="nextQues()">footer</button>
+            <button onclick="nextQues3()">script</script>></button><!--Give class to syle later-->
+            <button class="answerWro" style="display:block;" onclick="nextQues3()">javascript</button>
+            <button class="answerWro" style="display:block;" onclick="nextQues3()">style</button>
+            <button class="answerWro" style="display:block;" onclick="nextQues3()">footer</button>
         </p>
-        <h3 id ="h3"></h3>
     </div>
+
     <div id="quiz4" style="display:none;"><!--change div id-->
         <h1>#4 - How do you call a message to the developer console?</h1>
         <p>
-            <button class="answerWro" onclick="nextQues()">devConsole()</button><!--Give class to syle later-->
-            <button class="answerCorr" style="display:block;" onclick="nextQues()">console.log()</button>
-            <button class="answerWro" style="display:block;" onclick="nextQues()">log()</button>
-            <button class="answerWro" style="display:block;" onclick="nextQues()">function.log()</button>
+            <button class="answerWro" onclick="nextQues4()">devConsole()</button><!--Give class to syle later-->
+            <button style="display:block;" onclick="nextQues4()">console.log()</button>
+            <button class="answerWro" style="display:block;" onclick="nextQues4()">log()</button>
+            <button class="answerWro" style="display:block;" onclick="nextQues4()">function.log()</button>
         </p>
-        <h3 id ="h3"></h3>
     </div>
+
     <div id="quiz5" style="display:none;"><!--change div id-->
         <h1>#5 - How do you set an element's attribute using JavaScript?</h1>
         <p>
-            <button class="answerWro" onclick="nextQues()">.setAtt</button><!--Give class to syle later-->
-            <button class="answerWro" style="display:block;" onclick="nextQues()">.setStyle</button>
-            <button class="answerCorr" style="display:block;" onclick="nextQues()">.setAttribute</button>
-            <button class="answerWro" style="display:block;" onclick="nextQues()">.setContent</button>
+            <button class="answerWro" onclick="nextQues5()">.setAtt</button><!--Give class to syle later-->
+            <button class="answerWro" style="display:block;" onclick="nextQues5()">.setStyle</button>
+            <button style="display:block;" onclick="nextQues5()">.setAttribute</button>
+            <button class="answerWro" style="display:block;" onclick="nextQues5()">.setContent</button>
         </p>
-        <h3 id ="h3"></h3>
     </div>
+    
     <div id="results" style="display:none;">
         <h1>Your score:<span id="finalScore"></span></h1>
-        
+
     </div>
+
     <script src="script.js"></script>
 </body>
 
